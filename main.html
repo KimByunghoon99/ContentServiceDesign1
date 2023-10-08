@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8"><title>NC DINOS SHOP</title>
+	<meta charset="utf-8">
+	<title>NC DINOS SHOP</title>
+	<link href="ncstyle.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<h2><table>
+	<div id="header">
+		<div class="icon">
+			<a href="main.html"><img src="https://www.ncdinos.com/assets/images/sub/wordmark01.png" width="150" height="50"  alt="NC DINOS SHOP"></a>
+		</div>
+		<ul class="nav">
+			<li><a href="uniform.html">유니폼</a></li>
+			<li><a href="cap.html">모자</a></li>
+			<li><a href="goods.html">팬상품</a></li>
+			<li><a href="login.html">로그인</a></li>
+		</ul>
+	</div>
+	<div id="container">
+		<div id="contents">
+			<div class="wallpaper">
+			<img src="wallpaper_sep.jpg" width="1200" height="750">
+		</div>
+		<div class="bgm">
+			<h3>NC DINOS SHOP에 오신것을 환영합니다. 재생 버튼을 누르면 응원가 『운명의 부름』이 재생됩니다.</h3>
+			<audio controls onloadstart="this.volume=0.1"><source src="song.mp3" type="audio/mpeg">
+			브라우저가 audio를 지원하지 않습니다.
+			</audio>
+		</div>
+		<div class="main-item">
+			<h4>NC 다이노스의 다양한 상품들을 만나보세요</h4>
+			<table>
 			<tbody>
 				<tr>
-					<td><a href="main.html"><img src="https://www.ncdinos.com/assets/images/sub/wordmark01.png" width="150" height="53"  alt="NC DINOS SHOP"></a>
-					<td></td>    
-					<td><a href="uniform.html">유니폼</a>
-					<td><a href="cap.html">모자</a>
-					<td><a href="goods.html">팬상품</a>
+					<td><a href="uniform.html"><img src="https://d29trs2nbedcfj.cloudfront.net/erp/shop/e45ae35c-64f5-4451-950d-8652ab663aba20230329.jpg" width="300" height="300"></a></td>
+					<td><a href="cap.html"><img src="https://d29trs2nbedcfj.cloudfront.net/erp/shop/68e4e557-d5e1-4e0e-9a27-1d777e673d2f20230503.jpg" width="300" height="300"></a></td>
+					<td><a href="goods.html"><img src="https://d29trs2nbedcfj.cloudfront.net/erp/shop/7af6ec02-f198-4635-8550-3e490d43b6aa20230729.jpg" width="300" height="300"></a></td>
 				</tr>
 			</tbody>
-		</table></h2>
-		<h4><a href="login.html">로그인</a></h4>
-	</header>
-	<hr>
-	<h3><b>NC DINOS SHOP에 오신것을 환영합니다. 재생 버튼을 누르면 응원가 『운명의 부름』이 재생됩니다.</b></h3>
-	<audio controls onloadstart="this.volume=0.15">
-		<source src="song.mp3" type="audio/mpeg">
-		브라우저가 audio를 지원하지 않습니다.
-	</audio>
-	<hr>					
-	<table>
-		<caption><h2>NC 다이노스의 다양한 상품들을 만나보세요</h2></caption>
-		<tbody>
-			<tr>
-				<td><a href="uniform.html"><img src="https://d29trs2nbedcfj.cloudfront.net/erp/shop/e45ae35c-64f5-4451-950d-8652ab663aba20230329.jpg" width="300" height="300"></a></td>
-				<td><a href="cap.html"><img src="https://d29trs2nbedcfj.cloudfront.net/erp/shop/68e4e557-d5e1-4e0e-9a27-1d777e673d2f20230503.jpg" width="300" height="300"></a></td>
-				<td><a href="goods.html"><img src="https://d29trs2nbedcfj.cloudfront.net/erp/shop/7af6ec02-f198-4635-8550-3e490d43b6aa20230729.jpg" width="300" height="300"></a></td>
-			</tr>
-		</tbody>
-		<tr><td>유니폼</td><td>모자</td><td>팬상품</td></tr>
-	</table>
+			<tr><td><a href="uniform.html">유니폼</a></td><td><a href="cap.html">모자</a></td><td><a href="cap.html">팬상품</a></td></tr>	
+			</table>			
+		</div>
+	</div>		
+</div>		
 </body>
 </html>
+
+/*
+*/

@@ -1,0 +1,136 @@
+/* 짙은 남색 #071D3D 파란색 #1d467d 하늘색 #5c8ebb 금색 #c7a079  */
+html{
+	font-size:62.5%;/*기본 폰트 크기는 16px인데 10px로 바꿔서 rem계산 편하게*/
+}
+#header{ /* 상단 구역 */
+	background-color:#071D3D; 
+	width: 100%; 
+	height: 100px;  
+	color: white; 
+	font-weight: bold;
+	display: flex; /* 자식 요소들 정렬하기 위해서*/
+	align-items: center; /* 높이 정렬 */
+	position: fixed; /* 스크롤해도 고정 */
+	top: 0;
+	left: 0;
+	right: 0;
+	/* top,left,right:0 =>가득채우기 */
+	margin: auto;
+}
+.icon{
+	padding: 40px;
+}
+ul.nav{ /* 상단 메뉴 */
+	display: flex;
+	list-style: none; /* 리스트 앞 점 없애기 */
+	padding-left:45px; /* 아이콘과 메뉴리스트와의 간격 조절*/
+}
+ul.nav li{ /* 상단 메뉴 */
+	float:left;
+	padding-left:70px; /* 메뉴리스트 글자 사이 간격 조절*/
+	font-size: 2.1rem;
+}
+ul.nav li a:hover{ /* 메뉴 위 글자에 마우스 올리면 색상 변하기 */
+	color:#c7a079;
+}
+body{
+	margin: 0px;
+	padding-top: 100px;
+	position: relative;		
+	display: flex;
+	justify-content: center;
+	font-family:'NanumGothic', "Nato Sans KR", Arial, sans-serif;
+}
+#container{
+	width: 100vw;
+}
+#contents{
+	width:1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+a{
+	text-decoration-line: none; /* 하이퍼링크 밑줄 없애기 */
+}
+a:visited{
+	color:white; /* 방문한 링크 색깔 하얀색 */
+}
+h3 { 
+	margin: 8px;		
+	margin-bottom: 12px;
+
+	color: #1d467d;
+}
+.wallpaper{
+	display: flex;
+	height:750px;
+	top:0px;
+	justify-content: center;/* 높이 정렬 */
+
+}
+.bgm{
+	margin:0px;
+	padding-top: 10px;
+	font-size: 2rem;
+	text-align: center;		
+	background-color:#c7a079;
+	height: 120px;
+
+}
+.main-item{
+	margin:0px;
+	background-color:#5c8ebb;
+	height:600px; 
+	padding:20px; 
+	left: 0;
+	right: 0;
+}
+.main-item > h4{
+	text-align: center;
+	font-size: 3rem;
+	margin: 4px;
+}
+
+audio{
+	padding:3px; 
+	border-radius:40px; 
+	background-color:#1d467d;
+	color:#5c8ebb;
+}
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+	border-spacing: 25px;
+	border-collapse: separate;
+	font-size:1.8rem;
+	font-weight: bold;
+}
+.main-item > table{
+	margin-top: 20px;
+	text-align: center;
+	font-size: 2.8rem;
+}
+.main-item table a:hover{
+	color:#071D3D;
+}
+#login{
+	display: flex;
+	margin-top: 3rem;
+	width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items : center;
+}
+#uniform{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3rem;
+	width: 1280px;
+	font-size: 2.2rem;
+}
+.uniform-list{
+	list-style: none;
+	font-size: 2rem;
+	font-weight: bold;
+}
