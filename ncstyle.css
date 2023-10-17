@@ -33,6 +33,9 @@ ul.nav li{ /* 상단 메뉴 */
 ul.nav li a:hover{ /* 메뉴 위 글자에 마우스 올리면 색상 변하기 */
 	color:#c7a079;
 }
+ul.nav li a{
+		color: white;
+}
 body{
 	margin: 0px;
 	padding-top: 100px;
@@ -80,7 +83,7 @@ h3 {
 .main-item{
 	margin:0px;
 	background-color:#5c8ebb;
-	height:600px; 
+	height:550px; 
 	padding:20px; 
 	left: 0;
 	right: 0;
@@ -110,6 +113,7 @@ table{
 	margin-top: 20px;
 	text-align: center;
 	font-size: 2.8rem;
+	font-family:Arial, sans-serif;
 }
 .main-item table a:hover{
 	color:#071D3D;
@@ -133,4 +137,17 @@ table{
 	list-style: none;
 	font-size: 2rem;
 	font-weight: bold;
+}
+.mypage{
+	width: 542px;
+	height: 300px;
+	background-color: #c7a079;
+	border: 4px double;
+	font-size: 2rem;
+	padding: 20px;
+	padding-left: 30px;
+}
+.mypage h4{
+	font-size: 2.4rem;
+	margin-top: 4px;
 }

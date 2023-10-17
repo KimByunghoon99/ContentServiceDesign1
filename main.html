@@ -4,6 +4,39 @@
 	<meta charset="utf-8">
 	<title>NC DINOS SHOP</title>
 	<link href="ncstyle.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript">
+		function Account(name, email, purchase) {
+			this.name = name;
+			this.email = email;
+			this.purchase = purchase;
+
+			this.point = function(){
+				return this.purchase / 100;
+			}
+			this.membership = function(){
+				if(this.purchase >= 500000) return "VIP";
+				else if(this.purchase >=100000) return "GOLD";
+				else if(this.purchase >=50000) return "SILVER";
+				else return "BRONZE";
+			}
+			this.nexttier = function(){
+				if(this.purchase >= 500000) return " 현재 최고등급 입니다.";
+				else if(this.purchase >=100000){
+					this.money = 500000 - this.purchase;
+					return "다음 등급은 VIP이며 필요 구매금액은 " + this.money +"원입니다."; 
+
+				}
+				else if(this.purchase >=50000) {
+					this.money = 100000 - this.purchase;
+					return "다음 등급은 GOLD이며 필요 구매금액은 " + this.money +"원입니다.";
+				}
+				else {
+					this.money = 50000 - this.purchase;
+					return "다음 등급은 SILVER이며 필요 구매금액은 " + this.money +"원입니다.";
+				}
+			}
+		}
+	</script>
 </head>
 <body>
 	<div id="header">
@@ -41,10 +74,22 @@
 			<tr><td><a href="uniform.html">유니폼</a></td><td><a href="cap.html">모자</a></td><td><a href="cap.html">팬상품</a></td></tr>	
 			</table>			
 		</div>
+		<div class="mypage">
+			<h4>회원정보</h4>
+			<script type="text/javascript">
+				let account = new Account("김병훈", "kbht0204@gmail.com",52000);
+				document.write(account.name.bold() + "님<br>");
+				document.write(account.email+"<br>");
+				document.write("포인트: " + account.point()+ "P <br>");
+				document.write("누적 구매 금액: " + account.purchase+"원 <br>");
+				document.write("고객님의 등급은 "+ account.membership() +"입니다.<br>");
+				document.write(account.nexttier()+"<br>");
+			</script>
+		</div>
 	</div>		
 </div>		
 </body>
 </html>
 
-/*
-*/
+/* 추가할점 : 유니폼에 하나만 판매 페이지 만들고 거기에 3장에 나오는 버튼과 폼 적용해보기
+ */
