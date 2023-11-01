@@ -4,6 +4,23 @@
 	<meta charset="utf-8">
 	<title>유니폼 | NC DINOS SHOP</title>
 	<link href="ncstyle.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript">
+		function zoomIn(event) {
+    		event.target.style.width = "360px";
+    		event.target.style.height = "360px";
+    		event.target.style.transition = "all 0.6s";
+  		}
+
+  		function zoomOut(event) {
+    		event.target.style.width = "300px";
+    		event.target.style.height = "300px";
+    		event.target.style.transition = "all 0.6s";
+  		}
+  		function query() {
+			let ret = confirm("상품페이지가 미완성입니다. 대신 진짜 팀스토어 상품페이지로 이동하시겠습니까?");
+			return ret;
+		}
+	</script>
 </head>
 <body>
 	<div id="header">
@@ -25,13 +42,14 @@
 					<table>
 						<tbody>
 							<tr>
-								<td><a href="https://store.ncdinos.com/product/14VfucBqI">
-									<img src="https://d29trs2nbedcfj.cloudfront.net/erp/shop/e45ae35c-64f5-4451-950d-8652ab663aba20230329.jpg" width="300" height="300">
+								<td><a href="https://store.ncdinos.com/product/14VfucBqI" onclick="return query()">
+									<img src="https://d29trs2nbedcfj.cloudfront.net/erp/shop/e45ae35c-64f5-4451-950d-8652ab663aba20230329.jpg" width="300" height="300"  onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
 								</a></td>
-								<td><a href="https://store.ncdinos.com/product/32iKCDglG">
-									<img src="https://d29trs2nbedcfj.cloudfront.net/erp/shop/233505df-13bc-4a9e-9d9d-dce64f8fcfe620230421.jpg" width="300" height="300">
+								<td><a href="https://store.ncdinos.com/product/32iKCDglG" onclick="return query()">
+									<img src="https://d29trs2nbedcfj.cloudfront.net/erp/shop/233505df-13bc-4a9e-9d9d-dce64f8fcfe620230421.jpg" width="300" height="300" onmouseenter="zoomIn(event)"  onmouseleave="zoomOut(event)">
 								</a></td>
-								<td><a href="https://store.ncdinos.com/product/A4Yy22KJ"><img src="https://d29trs2nbedcfj.cloudfront.net/erp/shop/791f7ade-bdcd-46b9-ad3b-1ca459c5f27520230515.jpg" width="300" height="300">
+								<td><a href="https://store.ncdinos.com/product/A4Yy22KJ" onclick="return query()">
+									<img src="https://d29trs2nbedcfj.cloudfront.net/erp/shop/791f7ade-bdcd-46b9-ad3b-1ca459c5f27520230515.jpg" width="300" height="300" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
 								</a></td>
 							</tr>
 							<tr><td>2023 어센틱 홈 유니폼</td><td>2023 어센틱 충무공 유니폼</td><td>2023 어센틱 도구리 유니폼</td></tr>
@@ -43,11 +61,11 @@
 					<table>
 						<tbody>
 							<tr>
-								<td><a href="https://store.ncdinos.com/product/1EO1SSAqi">
-									<img src="https://d29trs2nbedcfj.cloudfront.net/erp/shop/b9865dc0-cda0-4fd2-976a-6365a0e0f70220230407.jpg" width="300" height="300">
+								<td><a href="https://store.ncdinos.com/product/1EO1SSAqi" onclick="return query()">
+									<img src="https://d29trs2nbedcfj.cloudfront.net/erp/shop/b9865dc0-cda0-4fd2-976a-6365a0e0f70220230407.jpg" width="300" height="300" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
 								</a></td>
-								<td><a href="https://store.ncdinos.com/product/1EQxjWSv5">
-									<img src="https://d29trs2nbedcfj.cloudfront.net/erp/shop/dddf465e-d272-470e-979a-5e0ab6cff92220230407.jpg" width="300" height="300">
+								<td><a href="https://store.ncdinos.com/product/1EQxjWSv5" onclick="return query()">
+									<img src="https://d29trs2nbedcfj.cloudfront.net/erp/shop/dddf465e-d272-470e-979a-5e0ab6cff92220230407.jpg" width="300" height="300" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
 								</a></td>
 							</tr>
 							<tr><td>레플리카 홈 유니폼</td><td>레플리카 원정 유니폼</td></tr>
